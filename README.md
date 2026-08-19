@@ -8,7 +8,7 @@ It helps creators move from an idea to a practical shot list, storyboard-image p
 
 Promptor now opens with a concise two-section editorial landing page before the workspace. The hero offers separate **Start a story** and **Plan a product** paths alongside one large storyboard-board visual. The second section uses a numbered creative process, a real storyboard-board proof image, creator categories, a concise FAQ, and a final workspace call to action. Landing imagery is delivered as optimized WebP assets and scroll-reveal motion respects reduced-motion preferences. The Promptor logo inside the workspace returns users to the landing page, and **Book help** links open `cal.com/franklinalegu` in a new tab.
 
-It uses two example storyboard boards from the repository’s `assets/` directory to demonstrate the intended pre-animation outcome: a coherent multi-panel visual sequence that is approved before individual clips are created.
+It uses two optimized example storyboard boards from the repository’s `public/assets/` directory to demonstrate the intended pre-animation outcome: a coherent multi-panel visual sequence that is approved before individual clips are created.
 
 ## What it is for
 
