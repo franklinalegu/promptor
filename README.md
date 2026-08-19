@@ -226,7 +226,7 @@ Promptor Stories now includes a dedicated **Product animation** workspace for ad
 
 Define the product once, then reuse it across a sequence:
 
-- Product name and category
+- Product name and one or more categories
 - Physical description and silhouette
 - Packaging and label details
 - Material, surface finish, and reflection behavior
@@ -240,6 +240,19 @@ The **brand lock** is the product equivalent of a character consistency lock. Fo
 Preserve the exact frosted-glass bottle silhouette, coral logo, ivory label,
 gold cap, label placement, and product proportions in every frame.
 ```
+
+### Product categories
+
+Select one or more product categories, or add custom categories. The current category library includes:
+
+- Skincare, beauty, fragrance, and haircare
+- Beverages, food, and snacks
+- Fashion apparel, footwear, jewellery, bags, and accessories
+- Consumer technology, audio/headphones, and mobile apps/software
+- Home/furniture, kitchenware, automotive, fitness/wellness, and sports equipment
+- Baby/kids, toys/games, stationery/books, luxury packaging, and retail/e-commerce
+
+Multiple categories can be combined for hybrid concepts, such as **Fitness & Wellness + Consumer Technology** for a wearable device or **Food & Snacks + Luxury Packaging** for a premium product launch.
 
 ### Five-shot product sequence
 
