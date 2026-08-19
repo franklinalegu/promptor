@@ -173,7 +173,7 @@ Promptor offers browser-side exports:
 
 ## Mobile workflow
 
-Promptor adapts its layout for small screens. On mobile, navigation becomes horizontal, forms stack into one column, and storyboard cards expose **Move up** and **Move down** controls as a touch-friendly alternative to drag-and-drop. Feature coverage tables scroll horizontally rather than compressing their fields.
+Promptor adapts its layout for small screens. On mobile, the six project areas become one compact **Project panel** selector, so users choose the panel they need instead of navigating a crowded module row. Forms stack into one column, and storyboard cards expose **Move up** and **Move down** controls as a touch-friendly alternative to drag-and-drop. Feature coverage tables scroll horizontally rather than compressing their fields.
 
 A mobile bottom action bar provides the immediate next action: add/copy a storyboard shot, build product animation shots, or turn a story into shots. Tap an uploaded storyboard frame to open a full-screen review with previous/next controls and swipe navigation. Mobile controls use larger touch targets, and footer/legal content stacks vertically for easier reading.
 
