@@ -115,7 +115,28 @@ Promptor creates a tailored brief asking ChatGPT to return a shot list with:
 12. Google Flow animation prompt
 13. Continuity note
 
-Paste or transfer the resulting plan into Promptor's storyboard as you refine the production.
+Promptor now also accepts a JSON response directly. In **Script & ChatGPT**, paste either a JSON array of shots or an object containing a `shots` array into **Import ChatGPT shot JSON**, then choose **Import shot list**. Promptor creates editable shot cards automatically.
+
+A compatible minimum example is:
+
+```json
+{
+  "shots": [
+    {
+      "title": "The city waits",
+      "duration": "5 sec",
+      "purpose": "Establish the world",
+      "framing": "Wide establishing shot",
+      "camera_movement": "Slow lateral drift",
+      "action": "The protagonist waits beneath the shelter.",
+      "emotion": "Isolated",
+      "audio": "Rain and distant traffic"
+    }
+  ]
+}
+```
+
+Promptor also accepts common alternatives including `shot_title`, `narrative_purpose`, `visible_action`, `emotional_beat`, and `sound`.
 
 ### 4. Refine every storyboard shot
 
@@ -131,7 +152,11 @@ In **Storyboard**, each shot has:
 - Audio direction
 - Approval status
 
-Select a shot to switch between three prompt views:
+Select a shot to switch between three prompt views. Use **Edit details** to open the full shot editor for title, duration, purpose, framing, camera movement, action, emotion, and audio instead of editing with browser prompts.
+
+Promptor can also import a ChatGPT-generated JSON shot list directly from the Script & ChatGPT workspace.
+
+Prompt views:
 
 | View | Use |
 | --- | --- |
@@ -256,6 +281,19 @@ Select a product category from the **Product categories** dropdown and choose **
 - Baby/kids, toys/games, stationery/books, luxury packaging, and retail/e-commerce
 
 Multiple categories can be combined for hybrid concepts, such as **Fitness & Wellness + Consumer Technology** for a wearable device or **Food & Snacks + Luxury Packaging** for a premium product launch.
+
+### Product campaign templates and feature mapping
+
+Choose a campaign type before building the sequence:
+
+- Luxury product reveal
+- Skincare demonstration
+- Food & beverage commercial
+- Technology product demo
+- Fashion product campaign
+- Social media product ad
+
+Promptor adapts the five-shot sequence to the selected campaign type. Each generated product shot also has its own feature dropdown, so creators can map a specific product benefit to the appropriate scene—for example, map `active noise cancellation` to a technology feature macro or `24-hour hydration` to a skincare texture shot.
 
 ### Five-shot product sequence
 
