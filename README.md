@@ -107,7 +107,7 @@ Product Animation now begins with one required step: **upload a clear product im
 
 The creator then only needs to add the **features or benefits** to highlight, such as `24-hour hydration`, `spill-proof lid`, or `active noise cancellation`.
 
-Frame shape and product story type remain available as optional campaign settings.
+The previous manual fields remain available in an **Edit product details (optional)** panel. Advanced users can refine the automatically filled product name, category, appearance, packaging/finish, consistency note, frame shape, and product story type without making the default workflow more complicated.
 
 ### Product story templates
 
