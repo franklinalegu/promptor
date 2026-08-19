@@ -184,6 +184,8 @@ For each approved shot:
 
 Promptor uses a human-centered editorial workspace: a warm off-white canvas, clean paper-like surfaces, restrained forest-green interaction states, and calm charcoal typography. Decorative gradients, transparent overlays, and dashboard-like visual effects have been removed in favour of a story-first low-noise workspace. The interface uses **Plus Jakarta Sans** for product UI and **DM Mono** for timing, labels, and technical metadata. The layout intentionally minimizes nested cards and repeated content so creators can move through project setup, scripting, storyboarding, references, and animation work with less visual friction.
 
+A persistent **Day mode / Night mode** control is available in the top navigation. The chosen appearance is saved locally in the browser and is restored the next time the project is opened.
+
 ### Project dashboard and brief
 
 The project-level creative control center now begins with a **Project Command Center**. It surfaces a production-readiness percentage, the five-stage workflow, current character/shot counts, approved-shot progress, and quick actions for storyboarding, the story bible, and reference review. Use the brief below it to maintain a consistent cinematic language across the entire story.
