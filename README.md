@@ -195,20 +195,57 @@ Promptor currently has:
 
 Projects are stored in browser `localStorage`. Export JSON regularly if a project is important. Clearing site data can remove local projects and attached references.
 
-## Run locally
+## React 19 architecture
 
-Promptor is a static site with no package installation or build step.
+Promptor is built with:
+
+- React 19 and TypeScript
+- Vite
+- React Router (hash-based routes for static hosting)
+- Zustand with browser-local persistence
+- dnd-kit for storyboard shot ordering
+- Framer Motion for intentional landing and workspace transitions
+- Local browser storage for the current local-first project model
+
+Key source folders:
+
+```text
+src/
+├── App.tsx              # Landing page, workspace and UI panels
+├── types.ts             # Project, shot and product data models
+├── store.ts             # Zustand project/workspace state
+├── lib/templates.ts     # Starter projects and shot templates
+├── main.tsx             # React entry point
+└── styles.css           # Responsive design system
+```
+
+## Run locally
 
 ```bash
 cd promptor
-python3 -m http.server 8080 --bind 0.0.0.0
+npm install
+npm run dev
 ```
 
-Open `http://localhost:8080`.
+Open the Vite address shown in the terminal, normally `http://localhost:5173`.
+
+To test the production build:
+
+```bash
+npm run build
+npm run preview
+```
 
 ## Deploy
 
-Deploy the repository root to GitHub Pages, Netlify, Vercel, Cloudflare Pages, or another static host. No build command is required.
+Promptor remains deployable as a static site, but hosts must build the React application before publishing it.
+
+| Host | Build command | Publish directory |
+| --- | --- | --- |
+| Netlify | `npm run build` | `dist` |
+| Vercel | `npm run build` | `dist` |
+| Cloudflare Pages | `npm run build` | `dist` |
+| GitHub Pages | Build with Vite/GitHub Actions, then publish `dist` | `dist` |
 
 ## Current boundaries
 
