@@ -181,9 +181,9 @@ For each approved shot:
 
 ## Workspace modules
 
-### Project brief
+### Project dashboard and brief
 
-The project-level creative control center. Use it to maintain a consistent cinematic language across the entire story.
+The project-level creative control center now begins with a **Project Command Center**. It surfaces a production-readiness percentage, the five-stage workflow, current character/shot counts, approved-shot progress, and quick actions for storyboarding, the story bible, and reference review. Use the brief below it to maintain a consistent cinematic language across the entire story.
 
 ### Story bible
 
