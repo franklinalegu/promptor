@@ -268,6 +268,8 @@ Define the product once, then reuse it across a sequence:
 
 Add each feature as a short, visualizable benefit, for example `24-hour hydration`, `active noise cancellation`, `spill-proof lid`, or `wireless charging`. Features are injected into every generated product prompt so the key benefit can be intentionally highlighted across the campaign.
 
+The Product Appearance and Keep This Product Consistent fields include one-click example categories. Creators can choose a starting point such as **Glass bottle**, **Matte tube**, **Beverage can**, **Tech device**, or **Luxury packaging**, then edit the generated wording as needed. Consistency examples cover **Logo & label**, **Shape & material**, **Typography & colour**, and **Scale & details**.
+
 The **brand lock** is the product equivalent of a character consistency lock. For example:
 
 ```text
