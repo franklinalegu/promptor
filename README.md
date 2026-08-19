@@ -114,9 +114,9 @@ Product Animation is part of the **Animation** area.
 
 ### Product information
 
-Product Animation now begins with one required step: **upload a clear product image**. Promptor uses that reference as the product’s visual anchor and automatically locks its appearance, packaging, label, materials, colours, silhouette, and proportions in generated prompts.
+Product Animation begins by selecting a **product category**, then uploading a clear product image. The selected category remains in place after upload. Promptor uses the reference as the product’s visual anchor and automatically locks its appearance, packaging, label, materials, colours, silhouette, and proportions in generated prompts.
 
-The creator then only needs to add the **features or benefits** to highlight, such as `24-hour hydration`, `spill-proof lid`, or `active noise cancellation`.
+The creator then adds the **features or benefits** to highlight, such as `24-hour hydration`, `spill-proof lid`, or `active noise cancellation`.
 
 The previous manual fields remain available in an **Edit product details (optional)** panel. Advanced users can refine the automatically filled product name, choose a product category from the category selector, update appearance/packaging/finish, and adjust the consistency note without making the default workflow more complicated.
 
