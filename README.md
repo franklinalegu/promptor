@@ -4,6 +4,12 @@
 
 It helps creators move from an idea to a practical shot list, storyboard-image prompts, animation prompts, visual references, and exportable production notes. Promptor works without an account or API key: it runs entirely in the browser and is designed to work alongside ChatGPT and animation tools such as Google Flow.
 
+## Landing page
+
+Promptor now opens with a detailed landing page before the workspace. The landing page introduces the storyboard-first workflow, product-campaign use case, ChatGPT and Google Flow handoff, examples of visual boards, common questions, local-first privacy positioning, and a clear **Start a project** call to action.
+
+It uses two example storyboard boards from the repository’s `assets/` directory to demonstrate the intended pre-animation outcome: a coherent multi-panel visual sequence that is approved before individual clips are created.
+
 ## What it is for
 
 ```text
