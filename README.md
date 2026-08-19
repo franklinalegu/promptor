@@ -24,13 +24,19 @@ Promptor does not generate images or videos itself. It is the planning layer tha
 
 | Area | What it does |
 | --- | --- |
-| **Overview** | Shows the project, a simple readiness check, and the clearest next step. |
+| **Overview** | Shows the project, a simple readiness check, and the clearest next step. Each workspace section can have its own editable title. |
 | **Characters & places** | Stores reusable character, location, and prop details. |
 | **Story** | Holds the story or script, creates a ChatGPT shot-list brief, and imports returned JSON. |
 | **Storyboard** | Organizes shots, storyboard frames, prompts, notes, statuses, and animation clips. |
 | **References** | Stores local reference images for characters, places, and props. |
 | **Animation** | Plans product campaigns, product features, product shots, image prompts, and animation prompts. |
 | **Export** | Exports project JSON, a CSV shot list, a text prompt pack, or a printable review. |
+
+## Section titles
+
+Every major workspace section has its own editable title. The project name remains visible above the page title, while the section can use a more specific working name—for example, **The Arrival Sequence** for Storyboard or **AERA Headphones Campaign** for Animation.
+
+Select **Rename section** in the page header to change the title for the current section. These titles are saved with the project and are included in JSON backups.
 
 ## Core workflow
 
