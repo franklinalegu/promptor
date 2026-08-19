@@ -69,7 +69,7 @@ Start in **Project brief** and define:
 - Target aspect ratio (`9:16`, `16:9`, `4:5`, or `1:1`)
 - Global visual style
 
-Promptor supports multiple genres through a **genre dropdown**. Select a genre, choose **Add**, and remove any selected genre when needed. You can also enter a custom genre and press Enter. This supports combinations such as **Romance + Magical realism**, **Afrofuturism + Action**, or **Coming-of-age + Drama**. Every selected genre is included in the ChatGPT storyboard brief.
+Promptor uses a **single-genre dropdown**. Select the preferred genre and it stays visible as a persistent tag in the story brief. To change it, simply choose another option from the dropdown. The selected genre is included in every ChatGPT storyboard brief.
 
 The visual style becomes a shared direction in every shot prompt. A useful global style includes color palette, material texture, mood, lens/film language, and lighting philosophy.
 
@@ -271,7 +271,7 @@ gold cap, label placement, and product proportions in every frame.
 
 ### Product categories
 
-Select a product category from the **Product categories** dropdown and choose **Add**. You can add more than one preferred category, remove a selected category when needed, or enter a custom category. The current category library includes:
+Select one preferred product category from the **Product category** dropdown. The selected category remains visible as a persistent tag in the product identity; choose another dropdown option whenever the product category needs to change. The current category library includes:
 
 - Skincare, beauty, fragrance, and haircare
 - Beverages, food, and snacks
