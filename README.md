@@ -1,333 +1,362 @@
-# Promptor
+# Promptor Stories
 
-> **Creative direction, compiled.**
+> **AI film preproduction for ChatGPT storyboarding and Google Flow animation.**
 
-Promptor is a browser-based character-direction studio for crafting detailed, model-ready prompts for image and video generation. It gives creators a structured way to define a character's identity, styling, world, camera language, and production constraints—then compiles those choices into a polished creative brief that can be used with Midjourney, Flux, Kling, and similar generative tools.
+Promptor Stories is a browser-based creative-direction workspace. It transforms a story idea into a structured film project with a story bible, a ChatGPT storyboard brief, editable shot cards, continuity notes, storyboard keyframe prompts, and Google Flow-ready animation prompts.
 
-![Promptor interface](https://img.shields.io/badge/status-prototype-887cff?style=flat-square)
-![No build required](https://img.shields.io/badge/build-none-58e1be?style=flat-square)
-![License](https://img.shields.io/badge/license-not%20specified-4b556b?style=flat-square)
+It is designed for the workflow:
+
+```text
+Story idea / script
+       ↓
+Promptor project + story bible
+       ↓
+ChatGPT storyboard breakdown
+       ↓
+Promptor shot refinement + storyboard keyframes
+       ↓
+Google Flow image/video generation and assembly
+```
+
+Promptor does not generate images or video itself. It gives creators the structured direction needed to generate more consistent visual assets and animated scenes in external tools.
 
 ---
 
 ## Contents
 
-- [Product overview](#product-overview)
-- [Core capabilities](#core-capabilities)
-- [Prompt-building workflow](#prompt-building-workflow)
-- [How the prompt is composed](#how-the-prompt-is-composed)
-- [Using Promptor](#using-promptor)
-- [Saved directions and local data](#saved-directions-and-local-data)
+- [What Promptor Stories does](#what-promptor-stories-does)
+- [Production workflow](#production-workflow)
+- [Workspace modules](#workspace-modules)
+- [Prompt outputs](#prompt-outputs)
+- [Using the application](#using-the-application)
+- [Data and privacy](#data-and-privacy)
 - [Run locally](#run-locally)
-- [Deploy](#deploy)
-- [Project structure](#project-structure)
-- [Technical notes](#technical-notes)
+- [Deployment](#deployment)
+- [Technical architecture](#technical-architecture)
 - [Current limitations](#current-limitations)
 - [Roadmap](#roadmap)
-- [Contributing](#contributing)
 
 ---
 
-## Product overview
+## What Promptor Stories does
 
-Promptor is not an image generator. It is a **creative-direction and prompt-composition interface**: a focused workspace that converts deliberate visual choices into a coherent prompt.
+Promptor Stories turns loose creative direction into reusable production assets:
 
-The interface is designed around the choices typically needed for editorial portraits, AI influencers, campaign characters, lifestyle imagery, and image-to-video concepts:
-
-- Who is the character?
-- What makes them visually recognizable?
-- What are they wearing and why?
-- Where does the scene take place?
-- How should the camera, lighting, and visual medium treat the subject?
-- Which details must be avoided by the image model?
-
-The result is a detailed, copyable production prompt rather than a loose list of keywords.
-
----
-
-## Core capabilities
-
-### Guided creative-direction workflow
-
-Promptor organizes character development into five focused stages:
-
-| Stage | Purpose | Example controls |
-| --- | --- | --- |
-| **Identity** | Establish the character's human and professional foundation. | Gender presentation, age range, heritage/origin, character role |
-| **Look** | Create a memorable appearance and wardrobe language. | Hair, eye colour, signature details, wardrobe direction, palette |
-| **World** | Give the character context and narrative space. | Location, atmosphere, environmental details, scene reference |
-| **Direction** | Define how the image should be produced. | Demeanor, expression, framing, pose, lighting, visual medium, aspect ratio |
-| **Refine** | Preserve intent and reduce unwanted model output. | Campaign context, negative direction |
-
-### Live prompt generation
-
-The right-hand panel updates continuously as choices are made. The generated direction contains visual identity, styling, setting, lighting, camera language, finish, aspect ratio, optional narrative context, and optional negative prompt instructions.
-
-### Creative decision presets
-
-Most controls offer curated one-select or multi-select options. This helps users move quickly while retaining specificity. Selecting an active one-select option again clears it; multi-select options can be combined.
-
-### Scene-reference attachment
-
-Users can attach a scene reference image from their device. Promptor records the attached filename and inserts an instruction to match the reference image's atmosphere and spatial language.
-
-> The current prototype does not inspect image pixels or upload the reference anywhere. It is a local creative note for the prompt. See [Current limitations](#current-limitations).
-
-### Saved directions
-
-Users can save a working direction under a custom name, build a small library of concepts, and reload any saved direction later.
-
-### Export and copy
-
-- **Copy** the generated direction to the system clipboard.
-- **Export `.txt`** downloads the current production prompt as a text file.
-- **Explore direction** creates a randomized starting point from the available preset pools.
-
----
-
-## Prompt-building workflow
-
-1. **Start with Identity**  
-   Select the character's presentation, age range, origin, and role.
-
-2. **Define their Look**  
-   Make appearance and wardrobe decisions. Use *Signature details* for features such as freckles, jewelry, tattoos, texture, or specific accessories.
-
-3. **Build their World**  
-   Choose a setting and atmosphere. Add environmental materials, props, or lighting cues in *Environmental details*.
-
-4. **Set Direction**  
-   Select camera framing, pose, lighting, rendering medium, and final output ratio. These choices make the prompt more consistent across generation tools.
-
-5. **Refine Constraints**  
-   Add campaign context to clarify the intended use. Add negative direction to reduce common generation defects or unwanted creative choices.
-
-6. **Copy or Export**  
-   The live production prompt is available at all times from the right-side output panel.
-
----
-
-## How the prompt is composed
-
-Promptor assembles selections into a consistent order so prompts read as a usable creative brief:
-
-```text
-[Age], [heritage], [role], [gender presentation].
-[Framing], [pose and gaze];
-[hair], [eye colour], [expression], [demeanor].
-Signature details: [...].
-Wearing [wardrobe] in a [palette] palette.
-Set on a [location] during [atmosphere].
-Environment: [...].
-[lighting], [rendering medium], 85mm portrait lens,
-deliberate composition, authentic skin detail, tactile fabric texture,
-nuanced shadows, professional color grading, subtle depth of field,
-campaign-quality finish.
-Narrative context: [...].
-Negative prompt: [...].
---ar [aspect ratio]
-```
-
-### Example
-
-```text
-Late 20s, West African, AI influencer, Woman. Eye-level medium portrait,
-centered, direct eye contact; Long waves hair in Obsidian black, Deep brown
-eyes, Confident smile expression, Confident and Sophisticated presence.
-Wearing Editorial tailoring in a Cream and gold palette. Set on a Modern Lagos
-rooftop during Golden hour. Golden-hour backlight, Luxury campaign photography,
-85mm portrait lens, deliberate composition, authentic skin detail, tactile
-fabric texture, nuanced shadows, professional color grading, subtle depth of
-field, campaign-quality finish. --ar 4:5
-```
-
-The exact text changes according to the choices made in the interface.
-
----
-
-## Using Promptor
-
-### Selection behavior
-
-- **One-select controls:** Choose a single option. Click it again to clear it.
-- **Multi-select controls:** Select as many traits as are relevant.
-- **Freeform fields:** Use these for visual specifics that presets cannot express.
-- **Empty controls:** Promptor uses sensible fallback phrasing in the generated prompt when a category is unfilled.
-
-### Tips for stronger prompts
-
-- Select **one or two** demeanor traits rather than every option.
-- Use signature details for traits that help distinguish the character between generations.
-- Use environmental details to specify materials, props, time of day, and atmosphere.
-- Keep negative direction concise and concrete: e.g. `plastic skin, text overlays, cluttered background`.
-- Pair a camera choice with a compatible scene. For example, a full-body editorial shot benefits from a richer environment than a tight beauty portrait.
-- Use `9:16` for vertical/reels concepts, `4:5` for social portrait posts, and `16:9` for cinematic frames.
-
----
-
-## Saved directions and local data
-
-Promptor is a client-side prototype. It does not use an account, a database, or a remote API.
-
-The browser's `localStorage` is used for:
-
-| Key | Purpose |
+| Asset | Purpose |
 | --- | --- |
-| `promptor.rebuild.draft` | Stores the active work-in-progress direction. |
-| `promptor.rebuild.saved` | Stores up to seven saved directions in the local browser. |
+| **Project brief** | Captures title, logline, genre, tone, target duration, format, and global visual language. |
+| **Story bible** | Stores reusable character, location, and prop records. |
+| **Character lock** | Documents physical details and wardrobe elements that must remain consistent across shots. |
+| **ChatGPT storyboard brief** | Produces a copyable instruction for requesting a structured shot list from ChatGPT. |
+| **Shot list** | Organizes the story into editable cinematic beats. |
+| **Storyboard keyframe prompt** | Generates a still-image prompt for visualizing each planned shot. |
+| **Google Flow prompt** | Generates an animation-oriented prompt with action, camera movement, audio, consistency rules, and negative constraints. |
+| **Continuity inspector** | Flags missing visual references and tracks shot approvals before animation. |
+| **Project JSON export** | Exports the project structure for backup or future integrations. |
 
-### Implications
+---
 
-- Saved directions remain in the same browser on the same device.
-- Clearing browser site data/local storage removes saved directions.
-- Saved directions are not shared between devices.
-- No user prompt information is sent to a server by this prototype.
+## Production workflow
+
+### 1. Create the project brief
+
+Start in **Project brief** and define:
+
+- Project title and logline
+- Genre and emotional tone
+- Target runtime
+- Target aspect ratio (`9:16`, `16:9`, `4:5`, or `1:1`)
+- Global visual style
+
+The visual style becomes a shared direction in every shot prompt. A useful global style includes color palette, material texture, mood, lens/film language, and lighting philosophy.
+
+Example:
+
+```text
+Cinematic Nigerian urban drama; indigo rain shadows, amber practical lights,
+tactile 35mm texture, natural skin detail and intimate camera movement.
+```
+
+### 2. Build the story bible
+
+Use **Story bible** to create repeatable records for:
+
+- **Characters** — name, role, physical description, and non-negotiable visual locks.
+- **Locations** — architecture, weather, materials, time of day, light, and atmosphere.
+- **Props** — important narrative objects that must stay consistent between scenes.
+
+A good character lock records details that should not drift between generations:
+
+```text
+Keep long braids, gold hoop earrings, scar above left eyebrow, facial
+structure and cream coat palette consistent.
+```
+
+### 3. Use ChatGPT to break down the story
+
+Open **Script & ChatGPT**, paste your draft, then select **Create ChatGPT storyboard brief**.
+
+Promptor creates a tailored brief asking ChatGPT to return a shot list with:
+
+1. Shot duration
+2. Narrative purpose
+3. Characters and continuity locks
+4. Location
+5. Framing
+6. Camera movement
+7. Visible action
+8. Emotional beat
+9. Dialogue or voiceover
+10. Audio and ambience
+11. Storyboard keyframe prompt
+12. Google Flow animation prompt
+13. Continuity note
+
+Paste or transfer the resulting plan into Promptor's storyboard as you refine the production.
+
+### 4. Refine every storyboard shot
+
+In **Storyboard**, each shot has:
+
+- Duration
+- Narrative purpose
+- Character and location links
+- Framing
+- Camera movement
+- Visible action
+- Emotional state
+- Audio direction
+- Approval status
+
+Select a shot to switch between three prompt views:
+
+| View | Use |
+| --- | --- |
+| **Google Flow prompt** | Animate the shot with character, location, motion, audio, and continuity context. |
+| **Storyboard keyframe** | Generate a still visual frame before animation. |
+| **Script & audio** | Keep dialogue / voiceover and sound direction with the visual beat. |
+
+### 5. Attach visual references and animate
+
+In **Assets & continuity**, attach local reference images to character, location, and prop records. Promptor stores reference filenames locally and reminds you which assets should be included as references/ingredients for the relevant Flow shots.
+
+For each approved shot:
+
+1. Create or choose the reference/keyframe image.
+2. Bring the applicable character, location, and prop references into Google Flow.
+3. Copy the shot's **Google Flow prompt** from Promptor.
+4. Generate a short clip.
+5. Record the best result and move to the next shot.
+
+---
+
+## Workspace modules
+
+### Project brief
+
+The project-level creative control center. Use it to maintain a consistent cinematic language across the entire story.
+
+### Story bible
+
+The reusable continuity layer. Story bible details are automatically incorporated into applicable shot prompts.
+
+### Script & ChatGPT
+
+A handoff surface for using ChatGPT as a story editor and shot-list writer. Promptor does not require an API key; the generated brief can simply be copied into ChatGPT.
+
+### Storyboard
+
+A shot-based production board. You can select, approve, duplicate, add, and edit shots. The active shot produces model-ready outputs on demand.
+
+### Assets & continuity
+
+A local reference tracker and preflight checklist for character locks, reference coverage, and approval status.
+
+---
+
+## Prompt outputs
+
+### Storyboard keyframe prompt
+
+Use this first when you need a clear still-frame reference for a scene:
+
+```text
+9:16 cinematic medium three-quarter shot. Amara, a 27-year-old Nigerian woman
+with long natural braids and a cream trench coat, waits beneath a rain-soaked
+Lagos bus shelter. Amber streetlamps reflect on wet pavement. Cinematic
+Nigerian urban drama; indigo rain shadows, tactile 35mm texture. Storyboard
+keyframe: slow push-in; clean visual read, intentional negative space,
+coherent screen direction, detailed environment. --ar 9:16
+```
+
+### Google Flow animation prompt
+
+Use this once a visual keyframe/reference has been selected:
+
+```text
+Use the attached character and location reference images where available.
+
+9:16, 6 sec. Medium three-quarter composition. Amara folds her arms against
+the cold and watches approaching headlights. Slow push-in. Her performance
+shifts through exhausted, quietly hopeful. Rain-soaked bus shelter, wet
+pavement, smeared traffic lights, amber streetlamps and deep indigo evening
+shadows.
+
+Keep the subject, wardrobe, facial features, hair, props and location design
+consistent with the project references. Keep long braids, gold hoop earrings,
+scar above left eyebrow, facial structure and cream coat palette consistent.
+
+Audio: rain on metal roof, passing tires. Natural movement, realistic material
+physics, no captions or text overlays. Avoid: plastic skin, altered wardrobe,
+extra fingers, duplicate props, visual flicker.
+```
+
+The Google Flow prompt emphasizes animation-relevant instructions: duration, action, camera movement, performance, audio, reference continuity, and unwanted output constraints.
+
+---
+
+## Using the application
+
+### Copying and exporting
+
+- **Copy Flow prompts**: copies all current animation prompts as a single production document.
+- **Copy**: copies the active prompt in the selected shot tab.
+- **Export project**: downloads the complete project as a JSON file.
+- **ChatGPT storyboard brief**: opens a modal containing a project-specific brief ready to copy.
+
+### Local starter project
+
+The app opens with a sample magical-realism project, **The Last Bus Home**. It demonstrates a character bible, a Lagos bus-stop location, a hero prop, and five shots. Replace it or use **New project** to begin from a clean project.
+
+### Recommended shot duration
+
+For AI video generation, begin with shots of **4–8 seconds**. Shorter, focused clips are more controllable and easier to join in a scene editor.
+
+### Continuity checklist before animation
+
+Before animating a shot, verify that:
+
+- Character reference(s) are available.
+- Wardrobe and signature physical details are in the character lock.
+- The scene location/reference is attached.
+- Hero props are described and present.
+- Aspect ratio is correct for the project.
+- The current emotional state follows naturally from the previous shot.
+- The shot is approved in the storyboard.
+
+---
+
+## Data and privacy
+
+Promptor Stories is a client-side static prototype.
+
+It has no account system, server-side database, analytics, API key, or built-in image/video generation. Project data is saved in the current browser's `localStorage` under:
+
+```text
+promptor.stories
+```
+
+### Important implications
+
+- Data remains on the current browser and device.
+- Clearing browser site data removes the active project.
+- Use **Export project** to create a backup.
+- Reference uploads are stored as filenames in project data; image files themselves are not uploaded or persisted by the application.
+- No project content is transmitted by Promptor.
 
 ---
 
 ## Run locally
 
-Promptor is a static application. No package manager, bundler, environment variables, or build step is required.
+Promptor Stories is a static website. It requires no package installation, build command, or environment variables.
 
-### Option 1 — Open the file
+### Open directly
 
-Open `index.html` in a modern browser.
+Open `index.html` in a current browser.
 
-### Option 2 — Start a local static server
-
-From the project directory:
+### Run a local static server
 
 ```bash
+cd promptor
 python3 -m http.server 8080 --bind 0.0.0.0
 ```
 
-Then visit:
+Open:
 
 ```text
 http://localhost:8080
 ```
 
-### Browser support
-
-Promptor is intended for current versions of Chrome, Edge, Firefox, and Safari. Clipboard support depends on browser permissions and the serving context; if copying is unavailable, select text directly from the output panel.
-
 ---
 
-## Deploy
+## Deployment
 
-Because it is static, Promptor can be deployed to GitHub Pages, Netlify, Vercel, Cloudflare Pages, or any static host.
+Deploy the repository root to any static hosting platform.
 
 ### GitHub Pages
 
-1. Push the project to GitHub.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)` folder.
-5. Save. GitHub will publish `index.html` as the site entry point.
+1. Open repository **Settings → Pages**.
+2. Choose **Deploy from a branch**.
+3. Select `main` and the `/ (root)` directory.
+4. Save.
 
-### Netlify / Vercel / Cloudflare Pages
+### Netlify, Vercel, or Cloudflare Pages
 
-- Connect the repository.
-- Set the framework preset to **Static HTML** or **No framework**.
-- Leave build command and output directory blank, unless your host requires an output directory configuration.
-- Deploy from the repository root.
+- Import the repository.
+- Choose **Static HTML** / **No framework**.
+- Do not set a build command.
+- Set the publish directory to the repository root if required by the host.
 
 ---
 
-## Project structure
+## Technical architecture
 
 ```text
 promptor/
-├── index.html    # Complete single-page application: markup, styles, and logic
-└── README.md     # Product and technical documentation
+├── index.html   # Full single-page application: UI, styling and client logic
+└── README.md    # Product and technical documentation
 ```
 
-### Implementation overview
+### Implementation
 
-The application is intentionally self-contained in `index.html`:
+- **Vanilla HTML, CSS, and JavaScript**
+- No runtime package dependencies
+- Browser `localStorage` persistence
+- Native Clipboard API for copying prompts
+- Native `Blob` download for JSON export
+- Responsive layout for desktop and mobile
 
-- **HTML** defines the product shell and output regions.
-- **CSS** provides responsive styling, visual tokens, responsive breakpoints, and interaction states.
-- **Vanilla JavaScript** defines the staged controls, prompt composer, local persistence, export behavior, and saved-direction library.
-
-This approach makes the prototype easy to deploy and inspect, while avoiding a dependency or build pipeline.
-
----
-
-## Technical notes
-
-### No external runtime dependencies
-
-The user interface and application logic are written with native browser APIs. The typography import is optional and loaded from Google Fonts; the interface remains usable if it is unavailable.
-
-### State model
-
-A single `state` object holds the active direction. Each stage describes its own fields and option sets. When the user modifies a field, Promptor:
-
-1. Updates `state`.
-2. Persists it to `localStorage`.
-3. Re-renders the active stage where necessary.
-4. Re-composes the production prompt.
-5. Updates the direction audit.
-
-### Export behavior
-
-The export action creates a browser `Blob` from the prompt string and downloads it as `promptor-direction.txt`. No server is needed.
-
-### Security and privacy
-
-This project does not include secrets, API keys, user accounts, analytics, or network submission of creative inputs. If image analysis, AI text generation, authentication, or cloud sync are added in the future, those features should use a secure backend and documented privacy controls.
+The application state includes the project brief, story bible entries, reference filenames, storyboard shots, and review statuses. Prompt text is generated dynamically using the global project style plus each shot’s specific character, location, action, camera, audio, and continuity details.
 
 ---
 
 ## Current limitations
 
-Promptor is a front-end product prototype. Current limitations include:
-
-- It creates prompts but **does not generate images or video**.
-- The scene-reference control attaches a filename and writes a prompt instruction; it does **not** perform visual scene analysis.
-- Prompt generation uses structured templates and selected content; it does not currently use an LLM to reason about compatibility or rewrite language dynamically.
-- There is no model-specific prompt adaptation beyond the `--ar` aspect-ratio suffix.
-- Saved directions are local to the browser and are not synchronized.
-- There is no user authentication, team workspace, revision history, or cloud backup.
-- There are no automated tests or continuous integration workflows yet.
+- Promptor does not call ChatGPT or Google Flow APIs directly.
+- Storyboard output from ChatGPT must currently be transferred manually into shot cards.
+- Attached references are tracked by filename; the app does not analyze, store, or transmit image pixels.
+- There is no drag-and-drop shot ordering yet.
+- Character, location, and prop assignment is lightweight and currently uses the project’s existing records.
+- The continuity inspector is a practical checklist, not an AI visual-analysis system.
+- No cloud sync, user authentication, collaboration, revision history, or multi-project database is included.
 
 ---
 
 ## Roadmap
 
-Potential next iterations:
-
-- [ ] Generate model-specific variants for Midjourney, Flux, SDXL, Kling, and image-to-video tools.
-- [ ] Add authenticated cloud sync and shareable project links.
-- [ ] Integrate secure image reference analysis through a backend service.
-- [ ] Add a visual prompt preview / moodboard panel.
-- [ ] Support reusable character bibles and multi-shot campaigns.
-- [ ] Add seed, stylization, and negative-prompt controls per target model.
-- [ ] Add CSV/JSON project export and import.
-- [ ] Add accessibility testing, keyboard navigation, and automated browser tests.
-
----
-
-## Contributing
-
-Contributions are welcome.
-
-1. Fork the repository.
-2. Create a feature branch:
-
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. Make and test your changes locally.
-4. Keep the application deployable as a static site unless the change explicitly introduces an architecture update.
-5. Open a pull request describing the problem, solution, and any UI/behavior changes.
-
-For substantial product changes, include before/after screenshots or a short screen recording where possible.
+- [ ] ChatGPT JSON storyboard import
+- [ ] Drag-to-reorder timeline and scene groups
+- [ ] Full shot editor for changing character, location, props, and dialogue
+- [ ] Visual thumbnail/keyframe board
+- [ ] Cloud project backup and shareable review links
+- [ ] Direct integrations where supported by external generation tools
+- [ ] Model-specific prompt adapters for Google Flow, Midjourney, Flux, and other tools
+- [ ] AI-powered continuity review of generated reference images
+- [ ] Export to production shot list PDF/CSV
+- [ ] Team comments, version history, and approvals
 
 ---
 
 ## License
 
-No license has been specified for this repository. Add a license file before distributing, relicensing, or accepting external contributions under a defined license.
+No license has been specified. Add a license before distributing the project or accepting public contributions.
