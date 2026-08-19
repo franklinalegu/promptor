@@ -30,6 +30,7 @@ Promptor does not generate images or video itself. It gives creators the structu
 - [Prompt outputs](#prompt-outputs)
 - [Product animation segment](#product-animation-segment)
 - [Using the application](#using-the-application)
+- [Administrator access and daily stats](#administrator-access-and-daily-stats)
 - [Data and privacy](#data-and-privacy)
 - [Run locally](#run-locally)
 - [Deployment](#deployment)
@@ -372,6 +373,30 @@ Before animating a shot, verify that:
 - Aspect ratio is correct for the project.
 - The current emotional state follows naturally from the previous shot.
 - The shot is approved in the storyboard.
+
+---
+
+## Administrator access and daily stats
+
+Promptor includes a front-end **Administrator Access** workspace for reviewing prototype usage and production activity. Open **Administrator access** in the sidebar and use the demo passcode:
+
+```text
+promptor-admin
+```
+
+The dashboard shows browser-local daily counts for:
+
+- Sessions
+- ChatGPT storyboard briefs opened
+- Prompt-copy actions
+- ChatGPT JSON shot imports
+- Product sequences built
+- Project JSON exports
+- Storyboard-shot, approval, product-shot, and story-bible totals
+
+A seven-day activity chart summarizes the locally tracked events. This is suitable for testing the admin user experience and validating the product workflow.
+
+> **Important:** The current admin area is a front-end demonstration only. The passcode is visible in source code, statistics are stored only in the current browser, and it cannot aggregate activity from other users. A production administrator system requires authenticated accounts, server-side event tracking, a database, role-based access control, and privacy/consent controls.
 
 ---
 
