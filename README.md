@@ -28,6 +28,7 @@ Promptor does not generate images or video itself. It gives creators the structu
 - [Production workflow](#production-workflow)
 - [Workspace modules](#workspace-modules)
 - [Prompt outputs](#prompt-outputs)
+- [Product animation segment](#product-animation-segment)
 - [Using the application](#using-the-application)
 - [Data and privacy](#data-and-privacy)
 - [Run locally](#run-locally)
@@ -212,6 +213,54 @@ extra fingers, duplicate props, visual flicker.
 ```
 
 The Google Flow prompt emphasizes animation-relevant instructions: duration, action, camera movement, performance, audio, reference continuity, and unwanted output constraints.
+
+---
+
+## Product animation segment
+
+Promptor Stories now includes a dedicated **Product animation** workspace for ads, social product films, packshots, beauty/product demos, fashion objects, beverages, and other branded objects.
+
+### Product identity lock
+
+Define the product once, then reuse it across a sequence:
+
+- Product name and category
+- Physical description and silhouette
+- Packaging and label details
+- Material, surface finish, and reflection behavior
+- Brand lock: the exact elements that must never change
+- Default campaign setting
+- Product reference image filename
+
+The **brand lock** is the product equivalent of a character consistency lock. For example:
+
+```text
+Preserve the exact frosted-glass bottle silhouette, coral logo, ivory label,
+gold cap, label placement, and product proportions in every frame.
+```
+
+### Five-shot product sequence
+
+Select **Build product sequence** to create a reusable advertising sequence:
+
+1. Hero reveal
+2. Material detail / macro shot
+3. Product in context
+4. Hero interaction
+5. Closing packshot
+
+Each shot creates either a **ChatGPT product-image prompt** in ChatGPT-only mode or a **Google Flow product-animation prompt** in Flow production mode.
+
+### Recommended product workflow
+
+1. Add a clean product packshot/reference in the Product animation section.
+2. Fill the product identity and brand lock completely.
+3. In ChatGPT-only mode, generate and approve the five storyboard/keyframe images.
+4. Verify that the silhouette, label, logo, colour, material and proportions remain consistent.
+5. Switch to Flow production mode.
+6. Use the matching product reference and corresponding Flow prompt for each animated clip.
+
+The generated animation prompts explicitly ask the model to preserve packaging geometry, label placement, material finish, product scale, branding, and reflections while avoiding warped logos, extra objects, deformed packaging, or model-added text overlays.
 
 ---
 
