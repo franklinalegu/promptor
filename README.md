@@ -215,6 +215,30 @@ The Google Flow prompt emphasizes animation-relevant instructions: duration, act
 
 ---
 
+## ChatGPT-only Storyboard Mode
+
+Promptor Stories opens in **ChatGPT-only storyboard mode**. This mode is designed for creators who want to plan and generate storyboard images in ChatGPT before paying for or moving into video generation.
+
+In this mode Promptor:
+
+- prioritizes the **ChatGPT image prompt** on each storyboard shot;
+- hides the Google Flow shot tab so the workspace stays focused on storyboarding;
+- changes **Copy prompts** to export all storyboard-image prompts;
+- uses the Assets panel as a reference-consistency checklist for ChatGPT images;
+- keeps a four-step storyboard status flow: **Draft → Prompt ready → Storyboard generated → Approved**.
+
+Use **ChatGPT-only mode** in the top navigation to switch to **Flow production mode** when your keyframes are approved and you are ready to make animation prompts. Switching modes never deletes the project, story bible, shot list, or references.
+
+### Recommended ChatGPT Free workflow
+
+1. Create the project brief and story bible in Promptor.
+2. Use **Open ChatGPT brief** to copy the shot-list instruction into a ChatGPT conversation.
+3. Select each Promptor shot and copy its **ChatGPT image prompt**.
+4. Generate storyboard panels in the same ChatGPT conversation where possible, carrying your character reference and prior panel context forward.
+5. Mark the shot **Prompt ready**, then **Storyboard generated**, then **Approved** after you select a usable panel.
+6. Export the project JSON as a backup.
+7. Switch to Flow production mode only when you are ready to animate approved storyboard panels.
+
 ## Using the application
 
 ### Copying and exporting
