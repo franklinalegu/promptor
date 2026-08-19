@@ -230,9 +230,12 @@ Define the product once, then reuse it across a sequence:
 - Physical description and silhouette
 - Packaging and label details
 - Material, surface finish, and reflection behavior
+- Product features and benefits to highlight on screen
 - Brand lock: the exact elements that must never change
 - Default campaign setting
 - Product reference image filename
+
+Add each feature as a short, visualizable benefit, for example `24-hour hydration`, `active noise cancellation`, `spill-proof lid`, or `wireless charging`. Features are injected into every generated product prompt so the key benefit can be intentionally highlighted across the campaign.
 
 The **brand lock** is the product equivalent of a character consistency lock. For example:
 
