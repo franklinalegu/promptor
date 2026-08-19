@@ -182,7 +182,7 @@ For each approved shot:
 
 ### Premium creative-tech design system
 
-Promptor uses a premium creative-tech visual direction: an editorial dark palette, warm champagne/gold highlights, restrained gradients, high-contrast production cards, refined monospaced production metadata, and a clear film-workflow hierarchy. The interface uses **Plus Jakarta Sans** for product UI and **DM Mono** for timing, labels, and technical metadata.
+Promptor uses a simplified premium creative-tech visual direction: an editorial dark palette, warm champagne/gold highlights, restrained decoration, a low-noise workspace, and a clear film-workflow hierarchy. The interface uses **Plus Jakarta Sans** for product UI and **DM Mono** for timing, labels, and technical metadata. The layout intentionally minimizes nested cards, gradients, and repeated content so creators can move through project setup, scripting, storyboarding, references, and product work with less visual friction.
 
 ### Project dashboard and brief
 
