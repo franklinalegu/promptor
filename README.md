@@ -103,15 +103,11 @@ Product Animation is part of the **Animation** area.
 
 ### Product information
 
-Set:
+Product Animation now begins with one required step: **upload a clear product image**. Promptor uses that reference as the product’s visual anchor and automatically locks its appearance, packaging, label, materials, colours, silhouette, and proportions in generated prompts.
 
-- Product name
-- Product category
-- Frame shape for product content
-- Product story type
-- Product appearance, packaging, and finish
-- Product features
-- Product consistency note
+The creator then only needs to add the **features or benefits** to highlight, such as `24-hour hydration`, `spill-proof lid`, or `active noise cancellation`.
+
+Frame shape and product story type remain available as optional campaign settings.
 
 ### Product story templates
 
