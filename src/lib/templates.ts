@@ -20,7 +20,7 @@ export function productShots(useCase: string): Shot[] {
 }
 
 export function newProduct(): Product {
-  return { name: '', category: 'Uploaded product reference', appearance: '', features: [], lock: '', useCase: 'Lifestyle product story', format: '' }
+  return { name: '', category: '', appearance: '', features: [], lock: '', useCase: 'Lifestyle product story', format: '' }
 }
 
 export function makeProject(type = 'Short film'): Project {
