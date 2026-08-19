@@ -165,6 +165,12 @@ Promptor offers browser-side exports:
 - **Prompt pack** — image and animation prompts for all shots
 - **Print / save PDF** — a printable production review using the browser print dialog
 
+## Mobile workflow
+
+Promptor adapts its layout for small screens. On mobile, navigation becomes horizontal, forms stack into one column, and storyboard cards expose **Move up** and **Move down** controls as a touch-friendly alternative to drag-and-drop. Feature coverage tables scroll horizontally rather than compressing their fields.
+
+Tap an uploaded storyboard frame or visual product board to open an expanded preview. Mobile controls use larger touch targets, and footer/legal content stacks vertically for easier reading.
+
 ## Day and night mode
 
 Use the top-navigation appearance switch to choose Day mode or Night mode. The choice is saved locally in the browser.
