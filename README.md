@@ -120,6 +120,12 @@ Choose a starting structure:
 
 Promptor creates a five-shot product sequence. Assign one key feature to each shot so the campaign does not try to show every benefit in every frame.
 
+### Visual storyboard board
+
+After creating the product sequence, use **Copy storyboard-board brief** in Animation. Paste the brief into ChatGPT together with the uploaded product reference. It requests a single professional **2-column × 3-row product storyboard board** with a coherent sequence, six clearly separated panels, panel timing, and consistent visual direction.
+
+Upload the approved board back to Promptor. It then becomes the visual source of truth before you generate individual keyframes or animation clips in Google Flow.
+
 ## References and storyboard images
 
 Reference images and storyboard frames are stored as browser-local data in the current prototype. They can be attached to:
