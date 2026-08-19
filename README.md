@@ -6,7 +6,7 @@ It helps creators move from an idea to a practical shot list, storyboard-image p
 
 ## Landing page
 
-Promptor now opens with a concise two-section landing page before the workspace. The first section introduces the storyboard-first idea with a visual board example. The second section begins with an animated workflow grid, then uses a responsive bento grid for creator use cases, storyboard-first principle, common questions, and the final workspace call to action. Scroll-reveal motion is disabled for visitors who request reduced motion.
+Promptor now opens with a concise two-section landing page before the workspace. The hero offers separate **Start a story** and **Plan a product** paths, with a short workspace transition. The second section begins with an animated workflow grid and includes an interactive Story board / Product board preview, then uses a responsive bento grid for creator use cases, storyboard-first principle, common questions, and the final workspace call to action. Scroll-reveal motion is disabled for visitors who request reduced motion. Landing imagery is delivered as optimized WebP assets.
 
 It uses two example storyboard boards from the repository’s `assets/` directory to demonstrate the intended pre-animation outcome: a coherent multi-panel visual sequence that is approved before individual clips are created.
 
@@ -175,7 +175,7 @@ Promptor offers browser-side exports:
 
 Promptor adapts its layout for small screens. On mobile, navigation becomes horizontal, forms stack into one column, and storyboard cards expose **Move up** and **Move down** controls as a touch-friendly alternative to drag-and-drop. Feature coverage tables scroll horizontally rather than compressing their fields.
 
-Tap an uploaded storyboard frame or visual product board to open an expanded preview. Mobile controls use larger touch targets, and footer/legal content stacks vertically for easier reading.
+A mobile bottom action bar provides the immediate next action: add/copy a storyboard shot, build product animation shots, or turn a story into shots. Tap an uploaded storyboard frame to open a full-screen review with previous/next controls and swipe navigation. Mobile controls use larger touch targets, and footer/legal content stacks vertically for easier reading.
 
 ## Day and night mode
 
