@@ -6,7 +6,7 @@ It helps creators move from an idea to a practical shot list, storyboard-image p
 
 ## Landing page
 
-Promptor now opens with a concise two-section landing page before the workspace. The first section introduces the storyboard-first idea with a visual board example. The second section uses a structured grid to explain the workflow, workspace output, creator use cases, common questions, and the final workspace call to action. This keeps the landing page focused while still showing the complete concept.
+Promptor now opens with a concise two-section landing page before the workspace. The first section introduces the storyboard-first idea with a visual board example. The second section begins with an animated workflow grid, then uses a responsive bento grid for creator use cases, storyboard-first principle, common questions, and the final workspace call to action. Scroll-reveal motion is disabled for visitors who request reduced motion.
 
 It uses two example storyboard boards from the repository’s `assets/` directory to demonstrate the intended pre-animation outcome: a coherent multi-panel visual sequence that is approved before individual clips are created.
 
