@@ -69,7 +69,7 @@ Start in **Project brief** and define:
 - Target aspect ratio (`9:16`, `16:9`, `4:5`, or `1:1`)
 - Global visual style
 
-Promptor supports multiple genres, so a project can combine directions such as **Romance + Magical realism**, **Afrofuturism + Action**, or **Coming-of-age + Drama**. Every selected genre is included in the ChatGPT storyboard brief.
+Promptor supports multiple genres through a **genre dropdown**. Select a genre, choose **Add**, and remove any selected genre when needed. You can also enter a custom genre and press Enter. This supports combinations such as **Romance + Magical realism**, **Afrofuturism + Action**, or **Coming-of-age + Drama**. Every selected genre is included in the ChatGPT storyboard brief.
 
 The visual style becomes a shared direction in every shot prompt. A useful global style includes color palette, material texture, mood, lens/film language, and lighting philosophy.
 
