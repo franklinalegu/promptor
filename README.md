@@ -181,6 +181,10 @@ For each approved shot:
 
 ## Workspace modules
 
+### Premium creative-tech design system
+
+Promptor uses a premium creative-tech visual direction: an editorial dark palette, warm champagne/gold highlights, restrained gradients, high-contrast production cards, refined monospaced production metadata, and a clear film-workflow hierarchy. The interface uses **Plus Jakarta Sans** for product UI and **DM Mono** for timing, labels, and technical metadata.
+
 ### Project dashboard and brief
 
 The project-level creative control center now begins with a **Project Command Center**. It surfaces a production-readiness percentage, the five-stage workflow, current character/shot counts, approved-shot progress, and quick actions for storyboarding, the story bible, and reference review. Use the brief below it to maintain a consistent cinematic language across the entire story.
