@@ -262,6 +262,7 @@ Define the product once, then reuse it across a sequence:
 - Product features and benefits to highlight on screen
 - Brand lock: the exact elements that must never change
 - Default campaign setting
+- Product-specific output format
 - Product reference image filename
 
 Add each feature as a short, visualizable benefit, for example `24-hour hydration`, `active noise cancellation`, `spill-proof lid`, or `wireless charging`. Features are injected into every generated product prompt so the key benefit can be intentionally highlighted across the campaign.
@@ -285,6 +286,12 @@ Select one preferred product category from the **Product category** dropdown. Th
 - Baby/kids, toys/games, stationery/books, luxury packaging, and retail/e-commerce
 
 Multiple categories can be combined for hybrid concepts, such as **Fitness & Wellness + Consumer Technology** for a wearable device or **Food & Snacks + Luxury Packaging** for a premium product launch.
+
+### Product output format
+
+The **Product Animation** module includes its own output-format dropdown. Choose `9:16` for vertical ads/Reels, `4:5` for social feed ads, `1:1` for square placements, `16:9` for widescreen commercials, or `3:4` for tall portrait compositions. Users can also keep the project-level format as the default.
+
+The selected product format is inserted into product keyframe and Google Flow prompts without changing the format used by the rest of the story project.
 
 ### Product campaign templates and feature mapping
 
