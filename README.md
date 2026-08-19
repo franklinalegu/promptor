@@ -6,7 +6,7 @@ It helps creators move from an idea to a practical shot list, storyboard-image p
 
 ## Landing page
 
-Promptor now opens with a concise two-section landing page before the workspace. The hero offers separate **Start a story** and **Plan a product** paths, with a short workspace transition. The second section begins with an animated workflow grid and includes an interactive Story board / Product board preview, then uses a responsive bento grid for creator use cases, storyboard-first principle, common questions, and the final workspace call to action. Scroll-reveal motion is disabled for visitors who request reduced motion. Landing imagery is delivered as optimized WebP assets.
+Promptor now opens with a concise two-section editorial landing page before the workspace. The hero offers separate **Start a story** and **Plan a product** paths alongside one large storyboard-board visual. The second section uses a numbered creative process, a real storyboard-board proof image, creator categories, a concise FAQ, and a final workspace call to action. Landing imagery is delivered as optimized WebP assets and scroll-reveal motion respects reduced-motion preferences.
 
 It uses two example storyboard boards from the repository’s `assets/` directory to demonstrate the intended pre-animation outcome: a coherent multi-panel visual sequence that is approved before individual clips are created.
 
