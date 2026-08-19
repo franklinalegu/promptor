@@ -6,7 +6,7 @@ It helps creators move from an idea to a practical shot list, storyboard-image p
 
 ## Landing page
 
-Promptor now opens with a detailed landing page before the workspace. The landing page introduces the storyboard-first workflow, use cases for storytellers, product campaigns, and creative teams, ChatGPT and Google Flow handoff, visual-board examples, a project-output sequence, exports, common questions, local-first privacy positioning, and clear **Start a project** calls to action.
+Promptor now opens with a focused landing page before the workspace. The landing page introduces the storyboard-first workflow, use cases for storytellers, product campaigns, and creative teams, ChatGPT and Google Flow handoff, visual-board examples, common questions, local-first privacy positioning, and clear **Start a project** calls to action. Repeated feature and workflow sections have been intentionally removed so the landing page stays concise.
 
 It uses two example storyboard boards from the repository’s `assets/` directory to demonstrate the intended pre-animation outcome: a coherent multi-panel visual sequence that is approved before individual clips are created.
 
