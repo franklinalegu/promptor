@@ -26,17 +26,16 @@ Animation prompts and selected clips
 
 Promptor does not generate images or videos itself. It is the planning layer that helps a creator make clearer, more consistent requests in the tools they already use.
 
-## Main areas
+## Main workflow stages
 
-| Area | What it does |
-| --- | --- |
-| **Overview** | Shows the project, a simple readiness check, and the clearest next step. Each workspace section can have its own editable title. |
-| **Characters & places** | Stores reusable character, location, and prop details. |
-| **Story** | Holds the story or script, creates a ChatGPT shot-list brief, and imports returned JSON. |
-| **Storyboard** | Organizes shots, storyboard frames, prompts, notes, statuses, and animation clips. |
-| **References** | Stores local reference images for characters, places, and props. |
-| **Animation** | Plans product campaigns, product features, product shots, image prompts, and animation prompts. |
-| **Export** | Exports project JSON, a CSV shot list, a text prompt pack, or a printable review. |
+Promptor presents four primary production stages. Supporting tools live within the appropriate stage instead of competing as equal top-level modules.
+
+| Stage | Included tools | What it does |
+| --- | --- | --- |
+| **Project** | Overview, story brief, script | Sets the project direction and turns an idea into a shot plan. |
+| **Visual Direction** | Characters, places, props, references | Stores the visual details and anchors that should remain consistent. |
+| **Storyboard** | Shot list, prompts, keyframes, approvals | Organizes visual moments and approves frames before animation. |
+| **Animate** | Product planning, motion direction, export/handoff | Creates animation-ready direction and prepares files for the next tool. |
 
 ## Section titles
 
