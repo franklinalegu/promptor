@@ -173,7 +173,7 @@ Promptor offers browser-side exports:
 
 ## Mobile workflow
 
-Promptor adapts its layout for small screens with a dedicated **Project panels** home screen. It lists only the six selectable project areas—Overview, Characters & places, Story, Storyboard, References, and Animation. Each panel card explains what it offers; tapping one opens its tools as the next mobile screen. A clear **All panels** control returns users to the panel list. Forms stack into one column, storyboard cards expose **Move up** and **Move down** controls as a touch-friendly alternative to drag-and-drop, and feature coverage tables scroll horizontally rather than compressing their fields.
+Promptor adapts its layout for small screens with a dedicated **Project panels** home screen. The six selectable areas are arranged as a bento-style card grid: Overview and Storyboard use wide cards, while Characters & places, Story, References, and Animation sit in focused supporting cards. Each panel card includes a number, visual glyph, short explanation, and direct open action; tapping one loads its tools as the next mobile screen. A clear **All panels** control returns users to the panel grid. Forms stack into one column, storyboard cards expose **Move up** and **Move down** controls as a touch-friendly alternative to drag-and-drop, and feature coverage tables scroll horizontally rather than compressing their fields.
 
 A mobile bottom action bar provides the immediate next action: add/copy a storyboard shot, build product animation shots, or turn a story into shots. Tap an uploaded storyboard frame to open a full-screen review with previous/next controls and swipe navigation. Mobile controls use larger touch targets, and footer/legal content stacks vertically for easier reading.
 
