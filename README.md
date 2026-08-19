@@ -161,7 +161,9 @@ Promptor offers browser-side exports:
 
 Use the top-navigation appearance switch to choose Day mode or Night mode. The choice is saved locally in the browser.
 
-## Privacy and local data
+## Privacy, GDPR, and local data
+
+A local-first GDPR/privacy policy template is available in [GDPR_POLICY.md](GDPR_POLICY.md). The product footer also includes Privacy & GDPR, Local data, Terms of use, and Your rights notices.
 
 Promptor currently has:
 
