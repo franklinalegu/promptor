@@ -243,7 +243,7 @@ gold cap, label placement, and product proportions in every frame.
 
 ### Product categories
 
-Select one or more product categories, or add custom categories. The current category library includes:
+Select a product category from the **Product categories** dropdown and choose **Add**. You can add more than one preferred category, remove a selected category when needed, or enter a custom category. The current category library includes:
 
 - Skincare, beauty, fragrance, and haircare
 - Beverages, food, and snacks
