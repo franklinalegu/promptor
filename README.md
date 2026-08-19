@@ -64,10 +64,12 @@ Promptor Stories turns loose creative direction into reusable production assets:
 Start in **Project brief** and define:
 
 - Project title and logline
-- Genre and emotional tone
+- One or more genres and emotional tone
 - Target runtime
 - Target aspect ratio (`9:16`, `16:9`, `4:5`, or `1:1`)
 - Global visual style
+
+Promptor supports multiple genres, so a project can combine directions such as **Romance + Magical realism**, **Afrofuturism + Action**, or **Coming-of-age + Drama**. Every selected genre is included in the ChatGPT storyboard brief.
 
 The visual style becomes a shared direction in every shot prompt. A useful global style includes color palette, material texture, mood, lens/film language, and lighting philosophy.
 
